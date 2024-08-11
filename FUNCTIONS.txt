@@ -1,0 +1,131 @@
+FUNCTIONS:-
+
+IT CONTAINS SET OF STATEMENTS GOING TO PERFORM A SPECIFIC TASK
+
+FUNCTION CONTAINS THREE PARTS:-
+1.FUNCTION PROTOTYPE DECLARATION
+2.FUNCTION CALL
+3.FUNCTION DEFINITION
+
+
+THEY ARE OF 4 KINDS:-
+A.FUNCTION WITH PARAMETER AND WITH RETURN VALUE
+B.FUNCTION WITH PARAMETER AND WITHOUT RETURN VALUE
+C.FUNCTION WITHOUT PARAMETER AND WITH RETURN VALUE
+D.FUNCTION WITHOUT PARAMETER AND WITHOUT RETURN VALUE
+
+A./*FUNCTION WITH PARAMETER AND WITH RETURN VALUE*/
+#include<stdio.h>
+int add(int,int);      //FUNCTION PROTOTYPE DECLARATION
+int sub(int,int);
+main()
+{
+	int a,b,x,y;
+	printf("enter the two numbers");
+	scanf("%d%d",&a,&b);
+	x=add(a,b);                         // FUNCTION CALL
+	printf("\n SUM IS %d",x);
+	y=sub(a,b);
+	printf("\n DIFF IS %d",y);
+}
+
+
+int add(int a,int b)  //FUNCTION DEFINITION
+{
+	int c;
+	c=a+b;
+	return c;
+}
+int sub(int a,int b)
+{
+	int c;
+	c=a-b;
+	return c;
+}
+
+B./*FUNCTION WITH PARAMETER AND WITHOUT RETURN VALUE*/
+#include<stdio.h>
+void add(int,int);      //FUNCTION PROTOTYPE DECLARATION
+void sub(int,int);
+main()
+{
+	int a,b,x,y;
+	printf("enter the two numbers");
+	scanf("%d%d",&a,&b);
+	add(a,b);    //FUNCTION CALL
+	sub(a,b);
+}
+void add(int a,int b)  //FUNCTION DEFINITION
+{
+	int c;
+	c=a+b;
+	printf("\n SUM IS %d",c);
+
+}
+void sub(int a,int b)
+{
+	int c;
+	c=a-b;
+	printf("\n DIFF IS %d",c);
+}
+
+C./*FUNCTION WITHOUT PARAMETER AND WITH RETURN VALUE*/
+#include<stdio.h>
+int add();      //FUNCTION PROTOTYPE DECLARATION
+int sub();
+main()
+{
+	int x,y;
+	x=add();    // FUNCTION CALL
+	printf("\n SUM IS %d",x);
+	y=sub();
+	printf("\n DIFF IS %d",y);
+}
+
+
+int add()  //FUNCTION DEFINITION
+{
+	int a,b,c;
+	printf("\n ENTER TWO NUMBERS");
+	scanf("%d%d",&a,&b);
+	c=a+b;
+	return c;
+}
+int sub()
+{
+	int a,b,c;
+	printf("\n ENTER TWO NUMBERS");
+	scanf("%d%d",&a,&b);
+	c=a-b;
+	return c;
+}
+
+D./*FUNCTION WITHOUT PARAMETER AND WITHOUT RETURN VALUE*/
+#include<stdio.h>
+void add();      //FUNCTION PROTOTYPE DECLARATION
+void sub();
+main()
+{
+
+	add();                         // FUNCTION CALL
+	sub();
+}
+
+
+void add()  //FUNCTION DEFINITION
+{
+	int a,b,c;
+	printf("\n ENTER TWO NUMBERS");
+	scanf("%d%d",&a,&b);
+	c=a+b;
+printf("\n SUM IS %d",c);
+}
+void sub()
+{
+    int a,b,c;
+	printf("\n ENTER TWO NUMBERS");
+	scanf("%d%d",&a,&b);
+	c=a-b; 
+	printf("\n diff IS %d",c);
+}
+
